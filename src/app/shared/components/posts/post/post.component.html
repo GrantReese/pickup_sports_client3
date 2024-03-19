@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="post-header">
+    <div class="post-header-left">
+      <img
+        src="https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png"
+      />
+      <div class="post-header-info">
+        <div class="post-header-info-name">{{ post.user?.username }}</div>
+        <div class="post-header-info-date">{{ post.created_at | date }}</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-content">{{ post.content }}</div>
+</div>
